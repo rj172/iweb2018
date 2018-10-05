@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <title>i.Web</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="../i.Web/js/script.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            #fixedbutton {
+                position: fixed;
+                top: 0px;
+                right: 0px;
+                background-color: red;
+                color:blue;
+                width: 100px;
+                height: 60px;
+                border-radius: 10px; 
+            }
+          .face {
+              height: 120px;
+              width: 120px;
+              border-radius: 50%;
+              margin: 50px auto;
+              box-shadow: 1px 1px 3px 1px #aaa;
+              overflow: hidden;
+          }
+          .main-underline {
+              width: 35px;
+              border-top: 4px solid #2782EA;
+              transition: 0.4s all ease;
+          }
+          
+          .link-title:hover .main-underline {
+              width: 100px;
+          }
+                  </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+                <!-- Navbar-->
+                <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+                        <!-- Links -->
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link" href="/home">Home</a>
+                          </li>
+                          <li class="nav-item active">
+                            <a class="nav-link" href="/NGOs">NGOs</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="/volunteers">Volunteers</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="/contact">Register</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="/about">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="/donate">Donate</a>
+                          </li>
+                        </ul>
+                      
+                      </nav>
+                      <div class="testimonials" id="testimonials">
+                        <div class="container">
+                            <!-- testimonials title -->
+                            <div class="link-title d-flex justify-content-center">
+                                <div style="padding-top:20px;">
+                                    <h1 class="animated fadeInDown delay-1s">NGOs</h1>
+                                    <div class="main-underline mx-auto animated fadeInDown delay-1s"></div>
+                                </div>
+                            </div>
+                            <!-- End testimonial title -->
+                            <div class="row">
+                                <div class="col-md testimonial">
+                                    <div class="face d-flex justify-content-center" style="float: left;">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl30CYexvlxLjsAfFAhVJliKPdvHedySKpd0Q9_jGppebtNLcA" alt="Hello!! Image Not Found">
+                                    </div>
+                                    <div class="d-flex justify-content-center" style="padding-top: 60px;">
+                                        <h3>Hifeed Organisation</h3>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <h5>Uttarakhand</h5>
+                                    </div>
+                                    <div>
+                                        <h6 style = "text-align: center;">
+                                          <a href="https://hifeed.org">Link to website: hifeed.org</a> 
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md testimonial">
+                                    <div class="face" style="float:left;">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ3KkTbgkEUBmxX2UvaFrO4EfzS82PyO_yntpYTX0VMxAopfV1" alt="Hello!! Image Not Found">
+                                    </div>
+                                    <div class="d-flex justify-content-center" style="padding-top:60px;">
+                                        <h3>Ruchi Organisation</h3>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <h5>Himachal Pradesh</h5>
+                                    </div>
+                                    <div>
+                                        <h6 style="text-align: center;">
+                                           <a href="http://www.ruchi.org.in/">Link to website: ruchi.org.in</a>
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md testimonial">
+                                    <div class="face" style="float:left">
+                                        <img src="data:image/jpeg;base64,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" alt="Hello!! Image Not Found">
+                                    </div>
+                                    <div class="d-flex justify-content-center" style="padding-top:60px;">
+                                            <h3>SUTRA Organisation</h3>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <h5>Himachal Pradesh</h5>
+                                    </div>
+                                    <div>
+                                        <h6 style="text-align: center;">
+                                            <a href="http://www.sutrahp.org/">Link to website: sutrahp.org</a>
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+        </div>
+        <button type="submit" id="fixedbutton">Send SOS</button>
+    </body>
+</html>
